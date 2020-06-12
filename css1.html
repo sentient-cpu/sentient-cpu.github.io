@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title> this is a css test page </title>
+<style type = "text/css" media = "all">
+ body {
+        background-color: green; /* works but currently overriden by background image */
+		background-image: url("https://www.tutorialspoint.com/css/images/css.jpg");
+		background-repeat: repeat-y; /* this can also have the value no-repeat  ; the y after the hypen makes the image only repeat in y axis , can also use x for x axis */
+		background-position:100px 200px; /* the first value is for the distance from left side and the second is for the distance from the top */
+		background-attachment: scroll; /*  fixed can also be used as a value  */
+       }
+ h1 {
+    color:red;
+	font-weight: normal;
+	letter-spacing: 1em;
+	margin-bottom: 90%;
+	margin-left: 20%;
+	margin-right: 60%;
+	margin-top: 10%;
+	text-transform: uppercase;
+	/*
+	this is a comment
+	
+	some measurement value
+%	Defines a measurement as a percentage relative to another value, typically an enclosing element.	p {font-size: 16pt; line-height: 125%;}
+cm	Defines a measurement in centimeters.	div {margin-bottom: 2cm;}
+em	A relative measurement for the height of a font in em spaces. Because an em unit is equivalent to the size of a given font, if you assign a font to 12pt, each "em" unit would be 12pt; thus, 2em would be 24pt.	p {letter-spacing: 7em;}
+ex	This value defines a measurement relative to a font's x-height. The x-height is determined by the height of the font's lowercase letter x.	p {font-size: 24pt; line-height: 3ex;}
+in	Defines a measurement in inches.	p {word-spacing: .15in;}
+mm	Defines a measurement in millimeters.	p {word-spacing: 15mm;}
+pc	Defines a measurement in picas. A pica is equivalent to 12 points; thus, there are 6 picas per inch.	p {font-size: 20pc;}
+pt	Defines a measurement in points. A point is defined as 1/72nd of an inch.	body {font-size: 18pt;}
+px	Defines a measurement in screen pixels.	p {padding: 25px;}
+	*/
+ }
+ #hey{
+   font-family: georgia,garamond,serif;
+   font-style: italic; /*  oblique is also a choice */
+   font-variant: small-caps; /* normal is also a choice  */
+   font-size: 20px;
+   font-weight: 1000; /* it is the thickness of font */
+   font-stretch: ultra-expanded; /*  ohter possible values are   --->  normal, wider, narrower, ultra-condensed, extra-condensed, condensed, semi-condensed, semi-expanded, expanded, extra-expanded, ultra-expanded. */
+   margin-left: 200px;
+   
+ }
+ #ne {
+ 
+       color: blue;
+	   direction: rtl;  /*  prints the text in this case in the right hand side */
+	   margin-right: 500px;
+	   letter-spacing: 20px;
+	   word-spacing: 5px;
+	   text-align: center; /*  basically direction and this are similar */
+	   text-indent: 5cm;
+	   text-transform: uppercase; /* other values are lowercase and capitalize */
+       text-decoration: underline; /*  other values are line-through , overline , blink */
+	   text-shadow: 10px 10px 8px pink;
+     }
+ #ima {
+         height: 400px;
+		 width: 400px;
+		 border: 1px;
+		 -moz-opacity: 4px; /* not exactly working now */
+      }  
+ 
+ /* the below are the psuedo classes and must come in the same order given below instead of a we can also use p (as in passage in html)  */
+ /* syntax : - selector:pseudo-class {property: value}  ; or ; selector.class:pseudo-class {property: value} ; the second is to be used only for selective stuff  */
+ a:link { color : #00FF00;
+         }
+ a:visited { color: red;
+            }
+ a:hover { color: purple;
+          }
+ a:active { color: brown;
+          }
+ a:focus { color: yellow; /* when selecting it with tab */
+           }
+ #new_div4 > p:first-child { text-indent: 100px; /*  to shift staring position  ; new_div4 is the id of a divs  ; p here stands for html passage  */
+                       } 
+		  
+	#oof { 
+	       margin-left: 500px;
+		   margin-right: 600px;
+	     }
+		 
+	/*  the below is for table  */	 
+		 
+  table.tab1 { border-collapse: seperate; /*  other value is collapse */
+               width: 400px;
+			   height: 400px;
+			   border-spacing: 10px;
+			   empty-cells: hide; /*  hides empty cells */
+			  }  
+   td.td1 { border-style: dotted;
+             border-width: 2px;
+			 border-color: red;
+			 padding: 10px;
+           }
+    td.td2 { border-style: solid;
+	         border-width: 2px;
+			 border-color: red;
+			 padding: 10px;
+	        }
+    td.td3  { border-style: solid;
+	         border-width: 2px;
+			 border-color: red;
+			 padding: 10px;
+	       }
+    caption.cap { caption-side: left; /*  other possible values are right , top  and bottom  */
+	             }
+    /*  about testing border setting */
+	
+	#yo {  /*  
+
+    none − No border. (Equivalent of border-width:0;)
+
+    solid − Border is a single solid line.
+
+    dotted − Border is a series of dots.
+
+    dashed − Border is a series of short lines.
+
+    double − Border is two solid lines.
+
+    groove − Border looks as though it is carved into the page.
+
+    ridge − Border looks the opposite of groove.
+
+    inset − Border makes the box look like it is embedded in the page.
+
+    outset − Border makes the box look like it is coming out of the canvas.
+
+    hidden − Same as none, except in terms of border-conflict resolution for table elements.
+        */
+	      border-top-style: solid; 
+	      border-bottom-style: solid;
+		  border-left-style: solid;
+		  border-right-style: solid;
+           border-top-width: 2px;
+           border-bottom-width: 2px;
+           border-left-width: 2px;
+           border-right-width: 2px;  			 
+		   margin-right: 1500px;
+	      border-top-color: pink; /*  in place of top we can also have right ,left and bottom */
+	      border-left-color: yellow;
+		  border-right-color: yellow;
+		  border-bottom-color: pink;
+		  
+		  padding-top: 10px;
+		  padding-bottom:5px;
+		  padding-left: 8px;
+		  padding-right: 20px;
+	     }
+	
+    /* this part is about cursor  */
+     
+	 /*  possible cursor values
+auto
+Shape of the cursor depends on the context area it is over. For example an I over text, a hand over a link, and so on...
+crosshair
+A crosshair or plus sign
+default
+An arrow
+pointer
+A pointing hand (in IE 4 this value is hand)
+move
+The I bar
+e-resize
+The cursor indicates that an edge of a box is to be moved right (east)
+ne-resize
+The cursor indicates that an edge of a box is to be moved up and right (north/east)
+nw-resize
+The cursor indicates that an edge of a box is to be moved up and left (north/west)
+n-resize
+The cursor indicates that an edge of a box is to be moved up (north)
+se-resize
+The cursor indicates that an edge of a box is to be moved down and right (south/east)
+sw-resize
+The cursor indicates that an edge of a box is to be moved down and left (south/west)
+s-resize
+The cursor indicates that an edge of a box is to be moved down (south)
+w-resize
+The cursor indicates that an edge of a box is to be moved left (west)
+text
+The I bar
+wait
+An hour glass
+help
+A question mark or balloon, ideal for use over help buttons
+<url>
+The source of a cursor image file	 
+    */
+    #te { cursor: help;
+         }	
+	/*  the following is about height and width */
+	#para3 {  border-style: solid;
+	          border-color: purple;
+			  border-width: 2px;
+	          height: 50px; /* instead we can also specify    max-height or min-height  */
+			  line-height: 30px; /*  decides the height between two lines */
+	          width: 50px;  /*  instead we can also specify   max-width or min-width */
+           }	
+		   
+	/*  the below part is for scroll test */
+   #scrolltest { border-color: yellow;
+                 border-style: dotted;
+				 border-width: 2px;
+                 display: block;
+                 height: 60px;
+				 width: 500px;
+                 overflow: scroll; /*  other values are auto (shows scroll bar when content exceed set limits) , hidden (simply hides the unseen text) , visible (allows the content to go out of the borders)  */
+				 background-color: white;
+               }   
+			   
+	/*   this part is about visibility */
+   
+    #para4 { 
+	         visibility: hidden; /* other values are collapse and visible */
+           }	
+		   
+		   
+	/*  positioning   part */
+   #new_div { margin-left:400px;
+              position: fixed; /* other vaules are relative (from the position it currently is in the page) and absolute (kinda like relative but a bit different) */
+			  left: -300px;  /* -ve value indicate it goes left */
+			  top: 100px;  /*  -ve value indicate it goes up */
+			  background-color: red;
+            }   
+	
+    /*  this part id about layers */	
+	
+	#new_div1 { 
+                margin-left: 500px;
+	            background-color: orange;
+	            height: 200px;
+				width: 200px;
+				position: relative;
+				left: 100px;
+				top: 0px;
+				z-index:2;
+	           }
+	#new_div2 { 
+	            margin-left: 500px;
+	            background-color: pink;
+	            height: 200px;
+				width: 200px;
+				position: relative;
+				left: 50px;
+				top: -100px;
+				z-index: 1;
+               } 	
+			   
+    /*  the below is for psuedo elements */
+   p.para_:first-line { color: orange;
+                          } 
+	p.para_:first-letter { font-style: italic;
+	                      }
+	p.para_:before { content: url("https://www.tutorialspoint.com/css/images/css.jpg"); 
+	                }
+    p.para_:after { content: url("https://www.tutorialspoint.com/css/images/css.jpg");
+	               }
+				   
+	/*  the below is for alpha channel in filters */
+	
+	#para_1 { Filter: Alpha(Opacity=100,FinishOpacity=0) /*<!--not working need to find why --> */
+	        }
+    /*  the below is for rounded borders */
+	#new_divo {
+	    border-style: solids;
+		border-width:5px;
+	    border-color: orange;
+		border-radius: 25px;
+	 }
+			   
+</style>
+</head>
+
+<body>
+<h1>this is a heading</h1>
+<p id = "hey"> this is a passage meant for testing  </p> <br/>
+<p id = "ne" > this is the second para </p>
+<img src="test.jpg" id = "ima" />
+<a href = "test.jpg" target = "_blank"> link </a>
+<div id = "oof">
+ <p> after this there should be a line</p>
+<hr/>
+</div>
+
+<table class = "tab1">
+  <caption class = "cap"> this is a caption </caption>
+  <tr>
+     <td class = "td1" width = "20%"> first</td>
+	 <td class = "td3" width = "80%">third </td>
+  </tr>
+  <tr>
+     <td class = "td2">second </td>
+  </tr>
+</table>
+
+<p id = "yo" > this text is to test border css </p>
+
+<p id = "para3"> this is a para 3 <br/> a test para </p> <br/>
+
+<div id = "te" >
+cursor
+</div>
+
+<br/>
+
+<div id = "scrolltest">
+<p> this  is a passage made for this scroll test <br/> this is the next line </p>
+</div>
+
+<p id = "para4"> this para is hidden </p>
+
+
+<div id = "new_div" > 
+<p> this is a test of fixed position</p>
+</div>
+
+<div id = "new_div1" >
+</div>
+<div id = "new_div2" >
+</div>
+<div id  = "new_div3" >
+</div>
+
+<div id = "new_div4" >
+<p> this is to test first-child </p>
+</div>
+
+<p class = "para_"> this is a test for psuedo elements </p>
+
+<p id = "para_1"> this is a para for alpha channel in filters </p>
+
+<div id ="new_divo">
+<p>this is a test for round borders</p>
+</div>
+
+</body>
+
+</html>
