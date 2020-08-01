@@ -1,0 +1,153 @@
+
+*{
+    font-family: "URW Chancery L", cursive;
+}
+#menu {
+    display: none;
+}
+body{
+    margin:0;
+    background-color: rgba(32, 238, 193, 0.062);
+}
+figure{
+    margin: 0 18vh;
+}
+img{
+    height: 40vh;
+    width: 40vw;
+}
+figcaption{
+    text-align: center;
+}
+header{
+    padding: 10vh 30vw 5vh;
+    text-align: center;
+    font-size: 1.5rem;
+    background-image: linear-gradient(to top, rgb(32, 238, 193,0.01) 50%, rgb(255,255,255));
+}
+
+main{
+    padding: 0 15vw 0;
+    
+}
+footer{
+    background-color: rgb(20, 20, 20);
+    color: #ffffff;
+    padding: 0 20vw 10vh;
+}
+a {
+    text-decoration: none;
+    color: #000000;
+}
+ul{
+    list-style-type: none;
+}
+
+p{
+    text-align: justify;
+}
+section{
+    box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.5);
+    font-size: 1.5rem;
+    padding: 1vh 6vw 1vh;
+    margin: 5vh 0;
+    line-height: 3rem;
+    background-color: #eed23318;
+    border-radius: 2vh;
+}
+ul{
+    padding:0;
+}
+header nav{
+    margin: 4vh 0 0 0;
+   /* position: absolute;
+    top: 23vh;
+    left:33vw; */
+}
+header>nav>ul>li{
+    display:inline-block;
+    margin: 0 2vw 0 2vw;
+    padding: 2vh;
+    transition-property: font-size,transform;
+    transition-delay: 0.01s;
+    transition-timing-function: ease-in;
+    transition-duration: 0.1s;
+}
+header nav li:hover{
+    font-size: 1.7rem;
+    transform: translateY(10px);
+}
+footer ul{
+    display:inline-block;
+    margin:0 6vw 0;
+}
+footer ul li{
+   display: block;
+   margin: 5vh 0;
+}
+footer a{
+    color: #da5e5e;
+}
+h3{
+    color: rgb(255, 255, 255);
+    font-size: 1.5rem;
+}
+h2 {
+    text-align: center;
+}
+.act_link{
+    opacity: 0.5;
+    color: rgb(250, 148, 14);
+}
+h1 {
+    font-family: "Brush Script MT", "Brush Script Std", cursive;
+    font-size: 5rem;
+}
+
+@media screen and (max-width:800px){
+    header nav{
+         display: none;
+    }
+    footer{
+        padding: 8vh 30vw 10vh;
+    }
+ 
+    #menu{
+        height: 5vh;
+        width: 10vw;
+        display: inline-block;
+        position: fixed;
+        top: 5vh;
+        left:5vw;
+    }
+    .menu_option  li{
+        display:block;
+        margin: 10vh 2vw 0 2vw;
+        border-bottom-style: solid;
+    }
+    .menu_option{
+        display:none;
+        position:fixed;
+        height: 70vh;
+        width: 100vw;
+        background-color: #f0f1d4;
+        top:5vh;
+        left:0;
+    }
+    figure{
+        margin: 0 15vw;
+    }
+    img{
+        height: 20vh;
+        width: 40vw;
+    }
+    main{
+        padding: 0 7vw 0;
+    }
+    footer ul{
+       display: block;
+    }
+    h1{
+        font-size: 2.5rem;
+    }
+}
